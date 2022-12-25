@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Transact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/mobile.css" rel="stylesheet" />
+<link href="~/css/style.css" rel="stylesheet" />
+@model BlockchainAPI.Models.TransactPostModel
+
+<div style="background-image: url('../../wwwroot/images/transaction.jpg');">
+    <table>
+    @using (Html.BeginForm("Transact", "Home", FormMethod.Post))
+    {
+        <tr>
+            <td>
+                <h2>Transaction</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.TextBoxFor(m => m.recipient, new { @placeholder = "Recipient" })
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.TextBoxFor(m => m.amount, new { @placeholder = "Amount" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Send" />
+            </td>
+        </tr>
+    }
+</table>
+</div>
+

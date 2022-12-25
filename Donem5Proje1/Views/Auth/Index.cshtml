@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+@model AuthAPI.Models.BigViewModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/loginscreen.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <table id="ad">
+                @using (Html.BeginForm("Register", "Auth", FormMethod.Post))
+                {
+                    <tr>
+                        <td>
+                            <h1>Create Account</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>or use your username for registration</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.registerPostModel.Username, new { @placeholder = "Username" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.registerPostModel.Email, new { @placeholder = "E-mail" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.registerPostModel.Password, new { @placeholder = "Password", @type = "Password" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Sign Up" id="button" />
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="form-container sign-in-container">
+            <table id="ad">
+                @using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+                {
+                    <tr>
+                        <td>
+                            <h1>Sign In</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.loginPostModel.Username, new { @placeholder = "Username" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(m => m.loginPostModel.Password, new { @placeholder = "Password", @type = "Password" })
+
+                        </td>
+                    </tr>
+                    @*<a href="#">Forgot your password?</a>*@
+                    <tr>
+                        <td>
+                            <input type="submit" value="Sign In" id="button" />
+                        </td>
+                    </tr>
+                }
+
+
+            </table>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/login.js"></script>
+</body>
+</html>

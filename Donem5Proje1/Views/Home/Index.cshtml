@@ -1,0 +1,24 @@
+﻿@model BlockPassModel
+
+<table>
+    @for (int i = 0; i < ViewBag.Length-1; i++)
+    {
+        <tr>
+            <td>
+                <h2>Block @i</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>Timestamp(UTC+0): @Model.time[i]</td>
+        </tr>
+        <tr>
+            <td>Hash: @Model.hash[i]</td>
+        </tr>
+        <tr>
+            <td>Data: @Model.data[i]</td>
+        </tr>
+    }
+</table>
+
+
+

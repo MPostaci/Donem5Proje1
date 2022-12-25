@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Donem5Proje1", "Donem5Proje1\Donem5Proje1.csproj", "{1A4EA38F-A03E-47C5-BE99-AFF9BB04E7F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthAPI", "RegisterAPI\AuthAPI.csproj", "{F2A7C884-FA16-443D-86B4-00EC5C2D1626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainAPI", "BlockchainAPI\BlockchainAPI.csproj", "{47E21B6E-39CF-4A4A-AD5B-E52A7B5CF6DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A4EA38F-A03E-47C5-BE99-AFF9BB04E7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4EA38F-A03E-47C5-BE99-AFF9BB04E7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4EA38F-A03E-47C5-BE99-AFF9BB04E7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4EA38F-A03E-47C5-BE99-AFF9BB04E7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A7C884-FA16-443D-86B4-00EC5C2D1626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A7C884-FA16-443D-86B4-00EC5C2D1626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A7C884-FA16-443D-86B4-00EC5C2D1626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A7C884-FA16-443D-86B4-00EC5C2D1626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E21B6E-39CF-4A4A-AD5B-E52A7B5CF6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E21B6E-39CF-4A4A-AD5B-E52A7B5CF6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E21B6E-39CF-4A4A-AD5B-E52A7B5CF6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E21B6E-39CF-4A4A-AD5B-E52A7B5CF6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BC2E655-52F3-4C41-893E-4528AB67BD29}
+	EndGlobalSection
+EndGlobal

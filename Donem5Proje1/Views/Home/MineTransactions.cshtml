@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "MineTransactions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/mobile.css" rel="stylesheet" />
+<link href="~/css/style.css" rel="stylesheet" />
+
+@using (Html.BeginForm("MineTransacts", "Home", FormMethod.Get))
+{
+    <input type="submit" value="Mine" style="padding: 32px 48px ;" />
+}
